@@ -125,7 +125,7 @@ header #menu
     header .navbar
     {
         position: fixed;
-        top: 7.4rem; left: 0;
+        top: -120%; left: 0;
         width: 100%;
         background: #fff;
     }
@@ -150,5 +150,23 @@ header #menu
         padding: 1rem;
         font-size: 2rem;
         z-index: 0;
+    }
+
+    header .navbar ul li a::before
+    {
+        height: 100%;
+        bottom: 0;
+        z-index: -1;
+        background: #333;
+    }
+
+    .fa-times
+    {
+        transform: rotate(180deg);
+    }
+
+    header .navbar.nav-toggle
+    {
+        top: 7.4rem;
     }
 }
